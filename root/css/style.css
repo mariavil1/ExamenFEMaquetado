@@ -197,6 +197,10 @@ footer {
     height: 26px;
 }
 
+i {
+    padding: 0px 5px;
+}
+
 .iconos {
    position: absolute;
    top: 100px; 
@@ -208,12 +212,13 @@ footer {
     flex-grow: 0.20;
     margin: 25px 60px;
     position: relative;
+    align-items: center;
 }
 
 .pie2 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-grow: 0.50;
 }
 
