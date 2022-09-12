@@ -90,7 +90,7 @@ h6 {
     font-size: 16.0714px;
     line-height: 156.6%;
     color: #3F4868;
-    margin-block-start: 60px;
+    margin-block-start: 20px;
     margin-block-end: 5px;
 }
 
@@ -130,7 +130,7 @@ h6 {
 
 .cajas {
     display: flex;
-    margin: 50px;
+    margin: 70px;
 }
 
 .card {
@@ -143,7 +143,6 @@ h6 {
     text-align: center;
     font-size: 15px;
     line-height: 156%;
-    position: relative;
     margin: 0;
     padding: 25px;
 }
@@ -151,8 +150,8 @@ h6 {
 .personas {
     width: 70px;
     height: 70px;
-    position: absolute;
     bottom: 230px;
+    margin-top: -60px;
 }
 
 #botoninferior {
@@ -243,7 +242,7 @@ input {
     font-weight: 500;
     font-size: 12px;
     line-height: 100px;
-    text-align: right;
+    text-align: center;
     flex-grow: 0.30;
 
 }
