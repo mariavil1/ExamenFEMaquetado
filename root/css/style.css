@@ -1,15 +1,20 @@
+/*Hola vic!!! mi resolucion de pantala es 1366x768
+Screen Width: 1366 pixels
+Screen Height: 768 pixels*/
+
 * {
     font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 body {
     margin: 0px;
+    box-sizing: border-box;
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 50px 30px;
     flex-grow: 1;
 }
@@ -48,6 +53,11 @@ nav {
     background-color:  rgba(139, 72, 191, 0.7);
     cursor: pointer;
 }
+
+.hamburguesa {
+    display: none;
+}
+
 .principal {
     display: flex;
     justify-content: space-around;
@@ -69,23 +79,25 @@ h2 {
     font-weight: 700;
     font-size: 36px;
     color: #232851;
-    text-align: center;
+    text-align: left;
 }
 
-h4 {
+.parrafoUno {
     font-size: 15.5px;
+    font-weight: 500;
     width: 350px;
     height: 71px;
     line-height: 160%;
+    margin-bottom: 30px;
 }
 
-h5 {
+h3 {
     color: #323851;
     font-weight: 700;
     font-size: 16px;
 }
 
-h6 {
+h4 {
     font-weight: 700;
     font-size: 16.0714px;
     line-height: 156.6%;
@@ -94,14 +106,14 @@ h6 {
     margin-block-end: 5px;
 }
 
-.subprincipal1 {
+.subprincipalUno {
     display: flex;
     justify-content: space-around;
     margin: 5px;
     padding: 10px;
 }
 
-.subprincipal1 p {
+.subprincipalUno p {
     width: 437px; 
     height: 104px;
     font-weight: 500;
@@ -118,8 +130,12 @@ h6 {
     border: none;
     padding: 10px 25px;
     margin: 20px;
-    color: #FFFFFF;
-    
+    color: #FFFFFF;  
+}
+
+.botonnumero:hover {
+    background-color:  rgba(205, 170, 231, 0.822);
+    cursor: pointer;
 }
 
 .centrar {
@@ -194,6 +210,7 @@ footer {
 .logo {
     width: 145px;
     height: 26px;
+    padding-top: 10px;
 }
 
 i {
@@ -205,7 +222,7 @@ i {
    top: 100px; 
 }
 
-.pie1 {
+.pieUno {
     display: flex;
     flex-direction: column;
     flex-grow: 0.20;
@@ -214,7 +231,7 @@ i {
     align-items: center;
 }
 
-.pie2 {
+.pieDos {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -237,12 +254,160 @@ input {
     color: #A0A0A0;
 }
 
-.pie3 {
+.pieTres {
     color: #8C8C94;
     font-weight: 500;
     font-size: 12px;
     line-height: 100px;
     text-align: center;
     flex-grow: 0.30;
-
 }
+
+
+@media (max-width: 481px) {
+
+    nav {
+        width: 80vw;
+        margin: 10px 20px;
+    }
+    
+    .barranav {
+        display: none;
+        visibility: none;
+    }
+
+    .ilustracion {
+        width: 400px;
+        height: 400px;
+        display: block;
+        margin: auto;
+    }
+
+    .inicial {
+        display: none;
+        visibility: none;
+    }
+
+   
+
+    .hamburguesa {
+        visibility: visible;
+        display: flex;
+        width: 40px;
+        height: 40px;
+        margin-top: 25px;
+    }
+
+    .principal {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 0 40px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 700;
+        text-align: center;
+        width: 80vw;
+        height: auto;
+        margin: 0;
+        line-height: 120%;
+    }
+
+    .parrafoUno {
+        margin: 20px;
+        padding-bottom: 20px;
+        width: 70vw;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .botonMobile {
+        display: flex;
+        visibility: visible;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nuevo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .principal h2 {
+        text-align: center;
+        font-size: 30px;
+        width: 90vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .seccionImpt {
+        width: 30%;
+        
+
+    }
+    
+
+    .subprincipalUno h3 {
+        background-color: rgba(139, 72, 191, 0.3);
+        height: 10px;
+        text-align: left;
+        padding: 15px 25px;
+    }
+
+
+    .centrar {
+        text-align: center;
+    }
+
+    .card {
+        display: none;
+        visibility: none;
+    }
+
+    .cardMobile {
+        visibility: visible;
+        display: flex;
+        width: 80vw;
+    }
+
+    .finalprincipal {
+        display: flex;
+        flex-direction: column;
+        line-height: 48px;
+        text-align: center;
+        height: 220px;
+        position: relative;
+    }
+
+    .finalprincipal h2{
+        width: 60vw;
+        margin: auto;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 40px;
+        letter-spacing: -1px;
+    }
+
+    .final {
+        visibility: visible;
+        position: absolute;
+        top: 180px;
+        right: 180px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+
+
