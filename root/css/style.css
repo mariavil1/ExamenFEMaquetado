@@ -82,6 +82,8 @@ h2 {
     font-size: 36px;
     color: #232851;
     text-align: left;
+    margin: 30px 0px;
+    
 }
 
 .parrafoUno {
@@ -110,34 +112,30 @@ h4 {
 
 .subprincipalUno {
     display: flex;
-    justify-content: space-around;
-    margin: 5px;
-    padding: 10px;
+    flex-direction: column;
+    width: 40vw;
 }
 
-.subprincipalUno p {
-    width: 437px; 
-    height: 104px;
-    font-weight: 500;
-    font-size: 15.2px;
+.columna {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    height: 40px;
+    border-radius: 25px 0 0 25px;
+}
+
+span {
+    margin-right: 5%;
+    padding: 10px 25px;
+    background-color: #8B48BF;
+    border-radius: 25px;
+    position: relative;
+}
+
+.columna-p {
+    margin-left: 18%;
     line-height: 26px;
     color: #B3B2B7;
-}
-
-.botonnumero {
-    background-color: #8B48BF;
-    border-radius: 30px;
-    width: 69px;
-    height: 43px;
-    border: none;
-    padding: 10px 25px;
-    margin: 20px;
-    color: #FFFFFF;  
-}
-
-.botonnumero:hover {
-    background-color:  rgba(205, 170, 231, 0.822);
-    cursor: pointer;
 }
 
 .centrar {
@@ -186,6 +184,10 @@ h4 {
     position: relative;
 }
 
+.finalprincipal h2 {
+    margin: 30px 50px;
+}
+
 .final {
     background-color: #FFFFFF;
     color: #8B48BF;
@@ -213,6 +215,7 @@ footer {
     width: 145px;
     height: 26px;
     margin: auto;
+    position: absolute;
 }
 
 i {
@@ -231,6 +234,7 @@ i {
     margin: 25px 60px;
     position: relative;
     align-items: center;
+    width: 15vw;
 }
 
 .pieDos {
@@ -265,9 +269,19 @@ input {
     flex-grow: 0.30;
 }
 
+.botonFooter {
+    background-color: #8B48BF;
+    border-radius: 30px;
+    width: 69px;
+    height: 43px;
+    border: none;
+    padding: 10px 25px;
+    margin: 20px;
+    color: #FFFFFF;  
+}
+
 
 @media (max-width: 481px) {
-
     nav {
         width: 80vw;
         margin: 1vh 10vw;/*utiliza la misma unidad de medida en todo 10vw de margin mas 80vw de content te da el 100vw*/
@@ -275,7 +289,6 @@ input {
     
     .esconderEnMobile { /*me invente ese nombre para brindar claridad*/
         display: none;
-        visibility: none;
     }
 
     /*mate el inicial porque use el esconder*/
@@ -318,10 +331,8 @@ input {
     }
 
     .parrafoUno {
-        margin: 20px;
-        padding-bottom: 20px;
-        /*esta no es necesaria
-        width: 70vw;*/
+        margin: auto;
+        padding: 20px;
         text-align: center;
         font-size: 14px;
     }
@@ -354,19 +365,34 @@ input {
         width: 100vw;
     }
 
-    .subprincipalUno p {
-        width: 80%;
+    .subprincipalUno {
+        width: 90vw;
         text-align: justify;
+        font-weight: 200;
     }
     
-
-    .subprincipalUno h3 {
+    .columna {
         background-color: rgba(139, 72, 191, 0.3);
-        height: 10px;
+        height: 2vh;
+        width: 100vw;
         text-align: left;
-        padding: 15px 25px;
+        padding: 15px 85px;
+        margin-left: 30px;
+        position: relative;
     }
 
+    span {
+        position: absolute;
+        left: 1px;
+    }
+
+    .columna-p {
+        margin: 0;
+        padding: 30px;
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 26px;
+    }
 
     .centrar {
         text-align: center;
@@ -392,7 +418,7 @@ input {
         position: relative;
     }
 
-    .finalprincipal h2{
+    .finalprincipal h2 {
         width: 60vw;
         margin: auto;
         font-weight: 500;
@@ -409,8 +435,47 @@ input {
     }
 
     footer {
-        display: flex;
         flex-direction: column-reverse;
-        
+        height: 100vh;
+        position: relative;
+    }
+
+    .pieUno {
+        width: 80vw;
+        height: 2vh;
+        flex-direction: column-reverse;
+        margin: auto;
+        position: absolute;
+        bottom: 150px;
+        left: 40px;
+
+    }
+    .problema {
+        position: absolute;
+        top: 60px;
+    }
+
+    .iconos {
+        position: absolute;
+        top: -10px;
+    }
+
+    i {
+        padding: 0px 25px;
+    }
+
+    .listaMobile {
+        height: 2vh;
+
+    }
+
+    .pieTres {
+        height: 2vh;
+    }
+
+    .pieTres p {
+        position: absolute;
+        bottom: -15px;
+        left: 125px;
     }
 }
