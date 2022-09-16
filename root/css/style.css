@@ -436,46 +436,35 @@ input {
 
     footer {
         flex-direction: column-reverse;
-        height: 100vh;
-        position: relative;
     }
 
     .pieUno {
         width: 80vw;
-        height: 2vh;
         flex-direction: column-reverse;
         margin: auto;
-        position: absolute;
-        bottom: 150px;
-        left: 40px;
-
     }
     .problema {
-        position: absolute;
-        top: 60px;
+        position: relative;
+        padding: 4vh;
     }
 
     .iconos {
-        position: absolute;
-        top: -10px;
+        position: relative;
+        top: 0px;
+        padding-top: 4vh;
     }
 
     i {
         padding: 0px 25px;
     }
 
-    .listaMobile {
-        height: 2vh;
-
-    }
-
     .pieTres {
-        height: 2vh;
+        height: 10vh;
     }
 
     .pieTres p {
-        position: absolute;
-        bottom: -15px;
-        left: 125px;
+        line-height: initial;
+        position: relative;
+        top: 33vh;
     }
 }
